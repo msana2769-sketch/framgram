@@ -1,5 +1,18 @@
-# Framgram
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
 
-Telegram Web client for Android.
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
 
-Framgram — твой Telegram в отдельном приложении.
+rootProject.name = "Framgram"
+include(":app")
